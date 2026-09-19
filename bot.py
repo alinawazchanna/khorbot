@@ -18,7 +18,7 @@ conn.commit()
 def valid_wallet(a):
     a = a.strip()
     return a.startswith("0x") and len(a) == 42
-        return bool(re.match(r'^0x[a-fA-F0-9]{40}$',a.strip()))
+        return bool(re.match(r"^0x[a-fA-F0-9]{40}$", s.strip()))
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.effective_user
