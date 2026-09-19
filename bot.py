@@ -3,7 +3,8 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, filters, ContextTypes
 
 # === APNA NAYA TOKEN YAHAN DALO ===
-BOT_TOKEN = "8766081988:AAHRhylqFoVAHvJKfnlSH4yAmwKimF4XYv8"
+import os
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 # ===================================
 
 CHANNEL = "@Markhor_Coin"
