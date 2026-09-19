@@ -11,3 +11,5 @@ jobs:
           python-version: '3.11'
       - run: pip install python-telegram-bot==20.7
       - run: python bot.py
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
